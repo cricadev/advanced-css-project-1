@@ -64,3 +64,18 @@ body {
     -o-transition: all 0.2s;
   }
 }
+
+.heading-tertiary {
+  font-size: $default-font-size;
+  font-weight: 700;
+  color: $color-grey-dark;
+  text-transform: uppercase;
+}
+.paragraph {
+  font-size: $default-font-size;
+  font-weight: 400;
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
