@@ -1,0 +1,60 @@
+.footer {
+  background-color: $color-grey-dark-3;
+  color: $color-gray-light-1;
+  padding: 10rem 0;
+
+  &__logo-box {
+    text-align: center;
+    margin-bottom: 8rem;
+  }
+  &__logo {
+    width: 15rem;
+    height: auto;
+  }
+  &__navigation {
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+  &__list {
+    list-style: none;
+  }
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    transition: transform 0.4s ease-in-out;
+    &:link,
+    &:visited {
+      color: $color-gray-light-1;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+    }
+    &:hover,
+    &:active {
+      transition: transform 0.2s ease-in-out;
+      color: $color-primary;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+      transform: rotate(10deg) scale(1.2);
+      -webkit-transform: rotate(10deg) scale(1.2);
+      -moz-transform: rotate(10deg) scale(1.2);
+      -ms-transform: rotate(10deg) scale(1.2);
+      -o-transform: rotate(10deg) scale(1.2);
+      -webkit-transition: transform 0.2s ease-in-out;
+      -moz-transition: transform 0.2s ease-in-out;
+      -ms-transition: transform 0.2s ease-in-out;
+      -o-transition: transform 0.2s ease-in-out;
+    }
+  }
+  &__copyright {
+    border-top: 1px solid $color-grey-dark-1;
+    padding-top: 2rem;
+    display: inline-block;
+    width: 80%;
+    float: right;
+  }
+}
