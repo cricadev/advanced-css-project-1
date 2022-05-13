@@ -15,10 +15,7 @@
     width: 60%;
     display: block;
     transition: all 0.3s;
-    -webkit-border-radius: 2px;
-    -moz-border-radius: 2px;
-    -ms-border-radius: 2px;
-    -o-border-radius: 2px;
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
@@ -41,20 +38,12 @@
     display: block;
     transform: translateY(0);
     transition: all 0.3s;
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -o-transform: translateY(0);
   }
 
   &__input:placeholder-shown + &__label {
     opacity: 0;
     visibility: hidden;
     transform: translateY(-4rem);
-    -webkit-transform: translateY(-4rem);
-    -moz-transform: translateY(-4rem);
-    -ms-transform: translateY(-4rem);
-    -o-transform: translateY(-4rem);
   }
   &__radio-group {
     width: 20%;
@@ -87,10 +76,6 @@
       background-color: $color-primary;
       opacity: 0;
       transition: opacity 0.2s;
-      -webkit-transition: opacity 0.2s;
-      -moz-transition: opacity 0.2s;
-      -ms-transition: opacity 0.2s;
-      -o-transition: opacity 0.2s;
     }
   }
   &__radio-input {
